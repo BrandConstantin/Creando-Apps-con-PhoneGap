@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Maps</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<!-- css externo de heaflet
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' /> -->
+		<link rel="stylesheet" type="text/css" href="css/leaflet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/maps.css"/>
+    </head>
+    <body>
+		<div class="header">
+			<img align="left" src="img/maps.png" style="width:50px">
+			<span>Mapas con Geolocalización</span>
+		</div>
+		
+		<!--<div id="coords"></div>-->
+		<div id="map"></div>
+		
+		<!-- el div y el script externos para ver el mapa
+		
+		<div id='map' style='width: 400px; height: 300px;'></div>
+		<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhbmRjb25zdGFudGluIiwiYSI6ImNqMnZzejVzNjAwNXUzMm16Zjd6cWttMGgifQ.JGHR7LGbFyJ9F45gE2MDUA';
+		var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v9'
+		});
+		</script>
+		
+		<script>
+			var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+			 
+			mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhbmRjb25zdGFudGluIiwiYSI6ImNqMnZzejVzNjAwNXUzMm16Zjd6cWttMGgifQ.JGHR7LGbFyJ9F45gE2MDUA';
+			var map = new mapboxgl.Map({
+			container: 'YOUR_CONTAINER_ELEMENT_ID',
+			style: 'mapbox://styles/mapbox/streets-v9'
+			});
+		</script>
+		
+		-->
+		<div class="footer">
+			Creando Apps, Aprende a programar aplicaciones móviles.
+		</div>
+		
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/fastclick.js"></script>
+		<!--<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/effects.js"></script>-->
+		<script type="text/javascript" src="js/leaflet.js"></script>
+		<script type="text/javascript" src="js/maps.js"></script>
+		
+		<!--
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+		-->
+		
+    </body>
+</html>

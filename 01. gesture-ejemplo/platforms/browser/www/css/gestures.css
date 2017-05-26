@@ -1,0 +1,100 @@
+body{
+	background-color: #266;
+	color: #fff;
+}
+
+button{
+	border: 1px solid black;
+	color: #fff;
+	width: 100px;
+	height: auto;
+	padding: 20px;
+	font-size: 1em;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+body.claro{
+	background-color:#2D882D;
+}
+
+body.oscuro{
+	background-color:#333577;
+}
+
+#zonaGestos{
+	width: 100%;
+	background-color: #d34;
+	margin-top: 10px;
+	min-height: 300px;
+	display: block;
+}
+
+#info{
+	color: #fff;
+	font-size: 2em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+
+/* css nativo */
+#zonaGestos.doubletap{
+	-webkit-animation: pulsacion 1.5s 1;
+}
+
+#zonaGestos.press{
+	-webkit-animation: presion 1.5s 1;
+}
+
+#zonaGestos.swipe-derecha{
+	-webkit-animation: swipe-derecha 4s 1;
+}
+
+#zonaGestos.swipe-izquierda{
+	-webkit-animation: swipe-izquierda 4s 1;
+}
+
+#zonaGestos.rotate{
+	-webkit-animation: rotate 5s 1;
+}
+
+/* nombre que le damos a los eventos pulsacion y presion
+webkit porque hacemos la aplicación para android */
+@-webkit-keyframes pulsacion{
+	0%, 100%{
+		background-color: blue;
+	}50%{
+		background-color: green;
+	}
+}
+
+@-webkit-keyframes presion{
+	0%, 100%{
+		background-color: blue;
+	}50%{
+		background-color: black;
+	}
+}
+
+@-webkit-keyframes swipe-derecha{
+	0%, 100%{
+		margin-left: 0%;
+	}50%{
+		margin-left: 100%;
+	}
+}
+
+@-webkit-keyframes swipe-izquierda{
+	0%, 100%{
+		width: 100%;
+	}50%{
+		width: 0%;
+	}
+}
+
+@-webkit-keyframes rotate{
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}

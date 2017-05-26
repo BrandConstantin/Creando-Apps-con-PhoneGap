@@ -1,0 +1,41 @@
+body{
+	background: lightgreen;
+}
+
+.notes-list-container{
+	padding: 10px;
+}
+
+.note-list{
+	margin-bottom: 10px;
+}
+
+.note-item{
+	margin-top: 2px;
+	background: yellow;
+	border: 1px solid black;
+}
+
+.note-editor{
+	display: none;
+	padding: 10px;
+}
+
+.titulo, .comentario{
+	width: 100%;
+}
+
+.footer{
+	padding: 5px;
+	font-size: small-caps;
+	font-style: italic;
+	text-align: center;
+}
+
+.header{
+	padding: 0 10px;
+	color: #d34;
+	text-align: center;
+	height: 48px;
+	line-height: 48px;
+}
